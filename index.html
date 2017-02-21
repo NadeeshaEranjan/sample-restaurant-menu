@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Template</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- custom styles -->
+	<link href="css/style.css" rel="stylesheet">
+	<style type="text/css">
+		.menu-container{
+			background-color: #fcfcfc;
+			color: #777;
+		}	
+
+		.menu-container .row{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		.section-header-image-bg{
+			border-top: 6px solid #008d8c;
+			border-bottom: 6px solid #008d8c;
+		}
+
+		.section-header-image{
+			/*margin-top: -6px;*/
+			/*margin-bottom: -6px;*/
+		}
+
+		.food-block{
+			min-height: 80px;
+		}
+
+		.food-block img{
+			max-height: 140px;
+		}
+
+		.menu-container h2 {
+			margin-top: 1px;
+			text-shadow: 2px 2px 0px #b3b3b3;
+		}
+
+		.food-block h4 {
+			font-size: 17px;
+		}
+
+		.food-block p {
+			font-size: 12px;
+		}
+
+		.food-category {
+			border-bottom: 1px dotted rgba(0, 141, 140, 0.47);
+			border-width: 2px;
+			margin-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		section.menu{
+			background-image: url(images/bigben.png);
+			background-size: 15%;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			/*border-bottom: 6px solid #008d8c;*/
+		}
+
+		section.mains{
+			background-image: url(images/tpBooth.png);
+			background-size: 8%;
+			background-repeat: no-repeat;
+			background-position: bottom left;
+			/*border-bottom: 6px solid #008d8c;*/
+		}
+
+		section.weekend{
+			background-image: url(images/bridge.png);
+			background-size: 30%;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			/*border-bottom: 6px solid #008d8c;*/
+		}
+
+		section.drinks{
+			background-image: url(images/guard.png);
+			background-size: 8%;
+			background-repeat: no-repeat;
+			background-position: bottom left;
+			/*border-bottom: 6px solid #008d8c;*/
+		}
+
+		section.wine{
+			background-image: url(images/bus.png);
+			background-size: 25%;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			border-bottom: 6px solid #008d8c;
+		}
+
+		.menu-container section .container .row .col-sm-4{
+			border-right: 1px dotted rgba(0, 141, 140, 0.47);
+			border-width: 2px;
+		}
+		.menu-container section .container .row .col-sm-4:last-child{
+			border-right: 0px;
+		}
+
+		.menu-container section .container .row .col-sm-6{
+			border-right: 1px dotted rgba(0, 141, 140, 0.47);
+			border-width: 2px;
+		}
+		.menu-container section .container .row .col-sm-6:last-child{
+			border-right: 0px;
+		}
+
+		.menu-container section .container{
+			background-color: rgba(252, 252, 252, 0.66);
+		}
+
+		@media (max-width: 768px){
+			.menu-container section .container .row .col-sm-4, .menu-container section .container .row .col-sm-6{
+				border-right: none;
+			}
+
+			section.wine{
+				background-size: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="menu-container">
+		<section class="menu">
+			<div class="row section-header-image-bg">
+				<div class="container">
+					<div class="col-md-12 section-header-image">
+						<img src="images/menu header image.png" width=100%>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="food-category">
+							<h2>SOUP</h2>
+							<div class="food-block">
+								<h4>Check with server on the soup of the day <span class="pull-right">$7</span></h4>
+							</div>
+						</div>
+						<div class="food-category">
+							<h2>SALADS</h2>
+							<div class="food-block">
+								<h4>Warm mushroom salad with balsamic vinaigrette salad<span class="pull-right">$12</span></h4>
+								<p>Portobello, button and Shimiji mushrooms are pan fried and added onto the mesclun with extra virgin olive oil and balsamic vinaigrette.</p>
+							</div>
+							<div class="food-block">
+								<h4>Burrata cheese served with tomatoes and mesclun<span class="pull-right">$14</span></h4>
+								<p>Creamy burrata cheese with tangry tomatoes and mixed greens with a dressing of extra virgin olive oil balsamic vinaigrette.</p>
+								<br>
+							</div>
+							<img src="F:\Nadeesha_Work\monkswood website\menu images\salads.png" style="float: right; max-height: 80px; margin-top: -25px;">
+						</div>
+						<div class="food-category">
+							<h2>APPETISERS</h2>
+							<div class="food-block">
+								<h4>Cheese plater<span class="pull-right">$16</span></h4>
+								<p>A selection of three kinds of cheese - served with crackers, grapes and gherkins.</p>
+							</div>
+							<div class="food-block">
+								<h4>Scotch eggs<span class="pull-right">$8</span></h4>
+								<p>A perfecly cooked egg that is evveloped in sausage meat and bread crumbs and lightly deep fried to a crispy golden brown. look out for the runny egg yolk when cutting into th egg. Served on a bed of mixed greens.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="food-category">
+							<h2>Pies</h2>
+							<div class="food-block">
+								<p>(SERVED WITH CHIPS AND MESCLUN SALAD)</p>
+								<p><b>in the Victorian era, pies were common street food. Piemen would hawk their wares around the pubs of London shouting "Era's all 'ot, toss or buy!". The piemen would then toss a coin and, if he lost, would give the pie away. if the piemen won the toss he would sell the pie for a penny.</b></p>
+							</div>
+							<div class="food-block">
+								<h4>Steak & Ale pie<span class="pull-right">$19</span></h4>
+								<p>Our very favourite is the steak and ale pie made with in-house pastry surrounding a filling of beef steak and vegetables in a thick gravy flavoured with ale, Worcester sauce, thyme and black pepper. Prefect English food.</p>
+							</div>
+							<div class="food-block">
+								<h4>Fish pie<span class="pull-right">$18</span></h4>
+								<p>A savory pie that is made with white fish, smoked haddock, vegetables and a creamy sauce that is laced with bay leaves and nutmeg. The filling is then topped with smooth, buttery mashed potatoes and backed till golden brown.</p>
+							</div>
+							<div class="food-block">
+								<h4>Pork pie<span class="pull-right">$16</span></h4>
+								<p>A traditional British cold meat pie. It consists of roughly chopped pork and pork stock jelly sealed in a hot water crust pastry. Served cold</p>
+							</div>
+							<div class="food-block">
+								<h4>Cottage pie<span class="pull-right">$15</span></h4>
+								<p>A classic hearty dish made from minced beef, herbs and a selection of complementary vegetables in a thick gravy, topped with home made mashed potatoes. A comforting meal that warms the heart and soul.</p>
+							</div>
+							<div class="food-block">
+								<h4>Shepherd's pie<span class="pull-right">$15</span></h4>
+								<p>Similar to the cottage pie, but using minced lamb for wannabe shepherds in all of us.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="food-category">
+							<div class="food-block text-right">
+								<img src="F:\Nadeesha_Work\monkswood website\menu images\pies2.png">
+							</div>
+						</div>
+						<div class="food-category">
+							<h2>Kids Menu</h2>
+							<div class="food-block">
+								<h4>Fish & Chips<span class="pull-right">$10</span></h4>
+							</div>
+							<div class="food-block">
+								<h4>Banger & Mash<span class="pull-right">$10</span></h4>
+							</div>
+							<div class="food-block">
+								<h4>Spaghetti Bolognaise<span class="pull-right">$10</span></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mains">
+			<div class="row section-header-image-bg">
+				<div class="container">
+					<div class="col-md-12 section-header-image">
+						<img src="images/mains header image.png" width=100%>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="">
+							<div class="food-block">
+								<h4>Fish and Chips<span class="pull-right">$22</span></h4>
+								<p>Using Atlantic cod, our crispy, lightly battered Fish & Chips is served with Monkswood's signature tripple-cooked chips, mushy peas and very own tartare sauce. Ask for malt vinegar for a more authentic experience.</p>
+							</div>
+							<div class="food-block">
+								<h4>Bangers and mash<span class="pull-right">$18</span></h4>
+								<p>Grilled english pork and beef sausages served with buttery, smooth mashed potatoes and a side of salad.</p>
+							</div>
+							<div class="food-block">
+								<img src="F:\Nadeesha_Work\monkswood website\menu images\burger.png" style="float:right; max-height: 120px;">
+								<h4>Toad in the hole<span class="pull-right">$18</span></h4>
+								<p>This dish of farm pork and beef sausages baked in a Yorkshire pudding batter is said to have gained its unusual moniker because it looks like toads popping their heads from a hole. Ahearty meal for those that long for the 'good old days'.</p>
+							</div>
+							<div class="food-block">
+								<h4>Ant n' dec burger<span class="pull-right">$20</span></h4>
+								<p>Premium minced beef party mixed with caramelised onions and smoked paprika. Served on toasted brioche bun, topped with cheddar, lettuce, tomatoes and bacon with chips and a salad on the side.</p>
+							</div>
+							<div class="food-block">
+								<h4>Steak and chips<span class="pull-right">$32</span></h4>
+								<p>This black angus grain-fed ribeye steak is grilled to your desire doneness and basted with melted butter and fresh herbs. Served with Monkswood's signature triple cooked chips and a side of greens.</p>
+							</div>
+							<div class="food-block">
+								<h4>Vongole pasta<span class="pull-right">$18</span></h4>
+								<p>Spaghetti cooked with japanese Asari clams sauteed with white wine, pepper and fresh English parley.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="food-category">
+							<div class="food-block text-right">
+								<img src="F:\Nadeesha_Work\monkswood website\menu images\plate.png" style="max-height: 120px;">
+							</div>
+							<div class="food-block">
+								<h4>Roast chicken <small>(half)</small><span class="pull-right">$22</span></h4>
+								<p>The process to get this roast chicken onto your table is a long winded affair, but when you see how moist and tender the meat is, you know it is all worth it. Flavourful meat roasted gently and then a last blast of heat to crispen the skin. Served with sauteed mushrooms, mashed potatoes and salad.</p>
+							</div>
+						</div>
+						<div class="food-category">
+							<h2>Sides</h2>
+							<div class="food-block">
+								<h4>Mashed potatoes<span class="pull-right">$6</span></h4>
+								<p>Smooth and velverty, our mashed potatoes are make from fresh potatoes and lots and lots of butter.</p>
+							</div>
+							<div class="food-block">
+								<h4>Chips<span class="pull-right">$6</span></h4>
+								<p>Americans call them Fries, we call them 'Chips'.</p>
+							</div>
+							<div class="food-block">
+								<h4>Mushy peas<span class="pull-right">$6</span></h4>
+								<p>Mushy peas are not everyone's cup of tea, but give ours a try and you may be surprised.</p>
+							</div>
+							<div class="food-block">
+								<h4>Roast potatoes<span class="pull-right">$8</span></h4>
+								<p>Thick chunks of potatoes, roasted to a golden brown using olive oil and fresh herbs. Crispy exterior and fluffy interior.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="food-category">
+							<h2>Dessert</h2>
+							<div class="food-block">
+								<h4>Scones with clotted cream and strawberry jam<span class="pull-right">$8</span></h4>
+								<p>There is fierce debate between Devon and Cornwall on how best to enjoy this quintessential English meal. Whether you prefer the jam on top of the clotted cream (Devon) or vice versa (Cornwall), both methods are still delicious. Accompany this with a pot of tea, and you can while the afternoon away.</p>
+							</div>
+						</div>
+						<div class="food-category">
+							<div class="food-block">
+								<h4>Apple crumble with warm custard<span class="pull-right">$12</span></h4>
+								<p>The ultimate comfort food! Always served warm, the tangy-sweet apples are topped with crusty crumble. Velvety smooth, warm vanilla custard gets drizzied over the pie, making each mouthful longing for the next.</p>
+							</div>
+							<div class="food-block">
+								<h4>Bread and butter pudding<span class="pull-right">$11</span></h4>
+								<p>Seldom has a dessert rejoiced in such an unpretentious name as the bread and butter pudding. Born out of frugality, but since elevated to staple of any pub worth its salt, it is the go to dessert if you are longing for warm hugs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="weekend">
+			<div class="row section-header-image-bg">
+				<div class="container">
+					<div class="col-md-12 section-header-image">
+						<img src="images/weekend brunch header image.png" width=100%>
+					</div>
+				</div>
+			</div>
+			<img src="F:\Nadeesha_Work\monkswood website\menu images\plate2.png" style="float:right; max-height: 120px;">
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="">
+							<br>
+							<h2><b>AVAILABLE ON SAT - SUN 11.30AM TO 3.30PM</b></h2>
+							<br>
+							<div class="food-block">
+								<h4>The fry-up<span class="pull-right">$19</span></h4>
+								<p>this traditional English breakfast comes with eggs,home cured bacon, sausage, baked beans, grilled tomatoes and sauteed mushrooms served with toasted brioche.</p>
+							</div>
+							<div class="food-block">
+								<h4>Eggs Benedict<span class="pull-right">$18</span></h4>
+								<p>Each side of the Brioche bread is topped with a slice of smoked salmon, poached egg and hollandaise sauce. The magic is in the sauce, which is a whisked-together blend of egg yolks, butter, and lemon.</p>
+							</div>
+							<div class="food-block">
+								<h4>The omelette<span class="pull-right">$16</span></h4>
+								<p>A fliffy omelette filled with mushroom, tomato and onion. Served with bacon, mesclun and grilled tomatoes on the side.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="">
+							<br>
+							<h2><b>AVAILABLE ON SAT - SUN BRUNCH & DINNER</b></h2>
+							<br>
+							<div class="food-block">
+								<h4>Roast beef and yorkshire pudding<span class="pull-right">$32</span></h4>
+								<p>This is England's traditional Sunday Lunch, which is a family affair. It consists of roast meat, two kinds of vegetables and roast potatoes with a Yorkshier pudding. The highlight meal after a week of hard graft, it is often the most anticipated meal of the week</p>
+							</div>
+							<div class="food-block">
+								<h4>Yorkshier pudding <small>(Each)</small><span class="pull-right">$2.50</span></h4>
+								<p>A sunday roast is not complete without the Yorkshier Pudding. Crispy on the outside, light and fluffy inside, its cup shape is ideal for holding the gravy!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="F:\Nadeesha_Work\monkswood website\menu images\chkn.png" style="float:left; bottom: 0px; max-height: 120px;">
+			</div>
+		</section>
+		<section class="drinks">
+			<div class="row section-header-image-bg">
+				<div class="container">
+					<div class="col-md-12 section-header-image">
+						<img src="images/drinks header image.png" width=100%>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="food-category">
+							<h2>Drafts</h2>
+							<div class="food-block">
+								<h4>1/2 Pint<span class="pull-right">$8</span></h4>
+								<h4>1 Pint<span class="pull-right">$14</span></h4>
+							</div>
+							<div class="food-block">
+								<img src="F:\Nadeesha_Work\monkswood website\menu images\beer.png" style="float:right; max-height: 120px;">
+								<h4>Hobgoblin (5.2% ABV)</h4>
+								<p>Usually described as a Ruby Beer, Hobgoblin is the most popular of the Wychwood beers. Full bodied and well balanced with a chocolate tofee mail flavour and a moderate bitterness. Prefect with our beef pies and steak.</p>
+							</div>
+							<div class="food-block">
+								<h4>Hobgoblin gold (4.2% ABV)</h4>
+								<p>The new kid on the block, a hoppy, malty golden beer with a citrus kick and the smell of forest gooseberries.</p>
+							</div>
+							<div class="food-block">
+								<h4>Brewdog ipa punk (5.6% ABV)</h4>
+								<p>A light golden beer with hints of tropical fruits and caramel and a sharp bitter finish - idea for Singapore!</p>
+							</div>
+							<div class="food-block">
+								<h4>Wychwood black wych porter (5%)</h4>
+								<p>Start with a measure of alluringly rich dark malt and allow the bitterness to creep in. watch out for the caramel sweetness lurking behind. This silky smooth Porter is a spellbinding force to be reckoned with.</p>
+							</div>
+						</div>
+						<h2>Bottles <span class="pull-right">$15</span></h2>
+						<div class="food-block">
+							<h4>Thatcher's somerset haze</h4>
+							<p>Refreshingly light, smooth and fruity. Using all our cider making experties to capture the subtle and delicious pear flavours. Perfect for times when you fancy sometimes a little different.</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="food-category">
+							<div class="food-block">
+								<h4>Thatcher's gold cider</h4>
+								<p>Using the best for this traditionally made cider, the result is a smooth Apple taste a bright sparkle. The flagship cider of the Thatcher's range.</p>
+							</div>
+							<div class="food-block">
+								<h4>Wychwood ginger beard</h4>
+								<p>A traditionally crafted ale with an infusion of root ginger to provide a surprising earthy taste with spicy kick.</p>
+							</div>
+							<div class="food-block">
+								<h4>Fuller's london prode (4.7% ABV)</h4>
+								<p>A good balance of malt and hops gives rise to a well rounded flavour reminiscent of tofee and biscuit notes.</p>
+							</div>
+							<div class="food-block">
+								<h4>Doctor thirsty's no.4 blonde (4.1% ABV)</h4>
+								<p>A fresh tasting, unpasturised beer with pleasent bitter hops and floral and pine notes. An absolute thist quencher.</p>
+							</div>
+							<div class="food-block">
+								<h4>Marston's oyster stout (4.5% ABV)</h4>
+								<p>A great tasting English stout that brings back the flavours of Victorian London and the time of Charles Dickens. Rich, dark and extremely creamy, this stout has good character and strength.</p>
+							</div>
+							<div class="food-block">
+								<h4>King goblin (6.6% ABV) <span class="pull-right">$16</span></h4>
+								<p>Handcrafted from roasted chocolate and crystal malts, with cascade hops to produce an indulgently rich, full, smooth beer of exceptional character.</p>
+							</div>
+						</div>
+						<div class="">
+							<h2>Soft Drinks</h2>
+							<div class="food-block">
+								<h4>330ML can<span class="pull-right">$3.50</span></h4>
+								<p class="clearfix"><span class="pull-left">Coke</span><span class="pull-right">Iced green tea</span></p>
+								<p class="clearfix"><span class="pull-left">Coke light</span><span class="pull-right">Iced lemon tea</span></p>
+								<p class="clearfix"><span class="pull-left">Coke zero</span><span class="pull-right">Fanta grape</span></p>
+								<p class="clearfix"><span class="pull-left">Sprite</span><span class="pull-right">Minerel water</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="food-category">
+							<h2>Bottled Juices</h2>
+							<div class="food-block">
+								<p>Phoenix Organic Pear & Apple (275ml)<span class="pull-right">$5</span></p>
+								<p>Phoenix Organic Ginger Beer (330ml)<span class="pull-right">$5</span></p>
+								<p>Phoenix Organic Lemonade (330ml)<span class="pull-right">$5</span></p>
+								<p>Phoenix Organic Cola (330ml)<span class="pull-right">$5</span></p>
+								<br>
+								<p>Charlis's Fruit Fix Spirulina Smoothie (330ml)<span class="pull-right">$5</span></p>
+								<p>Charlis's Fruit Fix Mango Coconut Smoothie (330ml)<span class="pull-right">$5</span></p>
+								<p>Charlis's Freshly Squeezed Apple Juice (330ml)<span class="pull-right">$5</span></p>
+								<p>Charlis's Freshly Squeezed Acai Berry Smoothie (330ml)<span class="pull-right">$5</span></p>
+								<p>Charlis's White Peach & Passionfruit Quencher (500ml)<span class="pull-right">$7</span></p>
+								<p>Charlis's Mango & Orange Quencher (500ml)<span class="pull-right">$7</span></p>
+							</div>
+						</div>
+						<div class="food-category">
+							<h2>Teas</h2>
+							<div class="food-block">
+								<h4>The 1872 clipper tea co. <small>(Served in a pot)</small><span class="pull-right">$5.50</span></h4>
+								<p class="clearfix"><span class="pull-left">Timeless Earl Grey</span><span class="pull-right">Chamomile</span></p>
+								<p class="clearfix"><span class="pull-left">English Breakfast</span><span class="pull-right">Ever Green Tea</span></p>
+								<p class="clearfix"><span class="pull-left">Peppermint</span></p>
+							</div>
+						</div>
+						<div class="">
+							<h2>Coffee</h2>
+							<div class="food-block">
+								<p>Espresso<span class="pull-right">$4</span></p>
+								<p>Long Black<span class="pull-right">$4</span></p>
+								<p>Flat White<span class="pull-right">$4.50</span></p>
+								<p>Cappuccino<span class="pull-right">$5</span></p>
+								<p>Latte<span class="pull-right">$5</span></p>
+								<br>
+								<p>Iced Long Black<span class="pull-right">$5</span></p>
+								<p>Iced Flat white<span class="pull-right">$5</span></p>
+								<p>Iced Cappuccino<span class="pull-right">$5</span></p>
+								<p>Iced Latte<span class="pull-right">$5</span></p>
+							</div>
+							<img src="F:\Nadeesha_Work\monkswood website\menu images\coffee.png" style="float:right; max-height: 80px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="wine">
+			<div class="row section-header-image-bg">
+				<div class="container">
+					<div class="col-md-12 section-header-image">
+						<img src="images/wine list header image.png" width=100%>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>Housepours</h2>
+						<div class="food-category">
+							<h3>ROSE</h3>
+							<div class="food-block">
+								<h4>(France) Marrenon Petula<span class="pull-right">$12 (Glass)</span></h4>
+								<h4>Luberon Rose 2014<span class="pull-right">$53 (Bottle)</span></h4>
+								<p>With its dep salmon-pink color, petula offers a nose of little red berries, with a touch of strawberries and raspberries backed by soft spices. A Sincere and expressive nose on the fruit and slightly crispy.</p>
+							</div>
+						</div>
+						<div class="food-category">
+							<h3>RED</h3>
+							<div class="food-block">
+								<h4>(Australia) Fox Creek Shadow's Run<span class="pull-right">$12 (Glass)</span></h4>
+								<h4>Shiraz Cabernet Sauvignon 2013<span class="pull-right">$53 (Bottle)</span></h4>
+								<p>Rich and balanced blend of blackberry, red berry and satsuma plum fruit flavours, complemented by a milk chocolate laced strawberry and cream mid-plate. A complement to our Steak and Chips.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Italy) San Martino<span class="pull-right">$14 (Glass)</span></h4>
+								<h4>Chianti Classico 2014<span class="pull-right">$63 (Bottle)</span></h4>
+								<p>With full and rich aroma of liquorice, toasted coffee and cherry, it has balanced acidity, evolved and mature tannins with a long finish. Try it with the Roast Duck</p>
+							</div>
+						</div>
+						<div class="food-category">
+							<h3>WHITE</h3>
+							<div class="food-block">
+								<h4>(Italy) Pecorari<span class="pull-right">$12 (Glass)</span></h4>
+								<h4>Pinto Grigio 2013<span class="pull-right">$53 (Bottle)</span></h4>
+								<p>Withthe aroma of fresh bread crust and acacia flowers, it is dry with all drawing through to a balanced and soft finish. Ideal with the Smoked Haddock Fish Pie.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(New Zealand) Marlborough Oyster Bay<span class="pull-right">$14 (Glass)</span></h4>
+								<h4>Sauvignon Blanc 2014<span class="pull-right">$63 (Bottle)</span></h4>
+								<p>A concentration of assertive passionfruit and tropical fruit flavours with an abundant bouquet, it is a wine that is allways crisp, elegant and refreshing. Perfect with our Fish and Chips or Roast Chicken</p>
+							</div>
+						</div>
+						<h2>BOTTLES</h2>
+						<div class="food-category">
+							<h3>SPARKLING</h3>
+							<div class="food-block">
+								<h4>(Italy) Piccini Prosecco<span class="pull-right">$53</span></h4>
+								<h4>-Vino Spumante Extra Dry Nv</h4>
+								<p>Intense fruity with rich scents of apple, lemon and grapefruit. The floral aromas clashwith a pleasantly bitter citrus rind note that is inherent in Prosecco grape.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Italy) Valdobbiandene Spagnol<span class="pull-right">$59</span></h4>
+								<h4>Rive Di Solighetto Prosecco</h4>
+								<p>From the Cisa hill in Solighetto, this handmade wine has a fine and persistant perlage with fresh notes of white flowers and yellow fruit. Intense, full and well-balanced taste.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(France) Domaine Des Terres Dorees Frv100<span class="pull-right">$59</span></h4>
+								<p>When you pour this Gamay-based sparkling wine into the glass you immidiately notice the pink hue. It is a perfect aperitef or dessert wine. ti is perfect summer sipping sitting in the garden or looking over the sea. It also teams beautifully with our Apple Crumble or B&B Pudding.</p>
+							</div>
+						</div>
+						<div class="">
+							<h3>RED</h3>
+							<div class="food-block">
+								<h4>(Spain) Luis Canas Crianza<span class="pull-right">$78</span></h4>
+								<h4>Rioja 2012</h4>
+								<p>Ruby red color with nose of balsamic, plum and oak. It is smooth with fruit and spicy flavours in toasted oak. Complex and structured with red fruits and hints of eucalyptus.</p>
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="food-category">
+							<div class="food-block">
+								<h4>(Australia) Barossa Valley Estate<span class="pull-right">$84</span></h4>
+								<h4>Cabernet Sauvignon 2012</h4>
+								<p>Expressive dark plum with a seductive blackcurrant richness</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Australia) Barossa Valley Estate<span class="pull-right">$84</span></h4>
+								<h4>Cabernet Shiraz Mourvedre 2012</h4>
+								<p>Fragrant violet with a brust of red berryfruits lingering softly on a velvety texture</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Australia) Fox Creek Rws Baron<span class="pull-right">$84</span></h4>
+								<h4>Shiraz 2012</h4>
+								<p>Fresh, juicy with red berries, plums and black cherries lead into a vanilla custard mid palate with hints of toast, coffee and mocha. The youthful tannis complete the experience with injection of fresh toasty oak on the finish.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Italy) Valiano<span class="pull-right">$94</span></h4>
+								<h4>Chianti Classico Riserva Docg208</h4>
+								<p>Brick red with a scent of sweet spices, black plums and a touch of rose petal. Palate showed fennel seeds, white pepper and dried rosemary mixed with plums and cherries. Silky tannis yet firm with balanced acidity and an excellent length.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Italy) Saint Maurizio Piedmont<span class="pull-right">$119</span></h4>
+								<h4>Barolo 2006</h4>
+								<p>Rich, harmonious and slightly dry and a long aftertaste where floral and liquorice tones dominate.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Italy) La Mannella<span class="pull-right">$149</span></h4>
+								<h4>Brunello De Montalcino 2007</h4>
+								<p>"88 Robert Parker Points"</p>
+								<p>A gorgeous Brunello with bountiful and intense aromas of red fruit, blackberry, spice, leather and cedar wood that go on and on. There's a touch of bitter almond followed by softer tones.</p>
+							</div>
+						</div>
+						<div class="food-category">
+							<h3>WHITE</h3>
+							<div class="food-block">
+								<h4>(France) Les Faitieres<span class="pull-right">$66</span></h4>
+								<h4>Riesling Aoc Alsace, 2014</h4>
+								<p>Straw yellow color with nose of citrus, minerality and almonds. Crisp acidity with notes of citrus fruits, apple and mild grassy characteristics on the plate.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(Italy) La Valentina spelt<span class="pull-right">$68</span></h4>
+								<h4>Trebbiano D'abruzzo Doc Superiore 2012</h4>
+								<p>Gold color with aromas of ripe, fresh apricots, peaches, sage and tarragon. The flavour is rich with notes of white fruit and pear with hints of citrus fruit. It is lightly spicy, full-bodied and has a long aftertaste.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(France) Climats Louis Max<span class="pull-right">$71</span></h4>
+								<h4>Chardonnay Haute Vallee Pays D'oc 2013</h4>
+								<p>Fresh nose of fruits and minerality. Palate of stone fruits, exotic fruits, lime and honey.</p>
+								<br>
+							</div>
+							<div class="food-block">
+								<h4>(France) Chateau De Fosse-Seche<span class="pull-right">$82</span></h4>
+								<h4>Arcane 2013</h4>
+								<p>Aged in large old beer transport tanks without and added CO2, this organically farmed wine combines concentrated, honeyed flavours and aromas with mouth-watering citric freshness. A heavenly combination!.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</body>
+</html>

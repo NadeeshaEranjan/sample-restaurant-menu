@@ -1,0 +1,114 @@
+/*////////////////////////////////////// language bar /////////////////////////////////////*/
+
+.language-bar{
+  border: none;
+  color: #111111;
+  background-color: #e6e6e8;
+  padding: 5px 0px;
+}
+
+.language-selector {
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #111111;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.login-menu{
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.login-menu li{
+  padding: 0px 8px;
+  border-right: 1px solid #111;
+}
+
+.login-menu li:last-child{
+  border-right: none;
+}
+
+.login-menu li a{
+  text-decoration: none;
+  color: #111;
+}
+
+.login-menu li a:hover{
+  color: rgb(222, 93, 87);
+}
+
+.search-box{
+  display: none;
+  /*position: absolute;*/
+  padding-top: 5px;
+}
+
+.login-menu:hover .search-box{
+  display: block;
+}
+
+/*////////////////////////////////////// Eof language bar /////////////////////////////////////*/
+
+
+/*////////////////////////////////////// menubar /////////////////////////////////////*/
+
+.menu-navbar{
+  margin-bottom: 0px
+}
+
+.navbar-brand{
+  height: 75px;
+}
+
+.menu-list{
+  padding: 15px 15px;
+}
+
+@media (max-width: 767px){
+  .navbar-brand{
+    height: 50px;
+    padding: 10px 10px;
+  }
+}
+/*////////////////////////////////////// Eof menubar /////////////////////////////////////*/
+
+
+/*////////////////////////////////////// main banner /////////////////////////////////////*/
+
+.banner-image{
+  background-image: url(../images/main-banner.jpg);
+  height: 500px;
+  background-size: cover;
+}
+
+@media (min-width: 1200px){
+  .banner-image{
+    background-position-y: 30%;
+    height: 600px;
+  }
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (max-width: 767px){
+  .banner-image{
+    background-position-y: 30%;
+    height: 300px;
+  }
+}
+
+/*////////////////////////////////////// Eof main banner /////////////////////////////////////*/
